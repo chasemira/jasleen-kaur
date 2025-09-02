@@ -36,7 +36,7 @@ const HeroContent = () => {
               Hello!
             </span>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-purple-950">
-              I'm Jasleen Kaur
+              I&apos;m Jasleen Kaur
             </span>
         </motion.div>
 
@@ -46,9 +46,9 @@ const HeroContent = () => {
         >
           I'm third-year Computing Science student at Simon Fraser University (SFU) with a passion for AI, 
           full-stack development, machine learning, and cybersecurity. I love taking initiative and efficiently bringing ideas to life, 
-          whether it’s leading frontend development for SFU Hub or building real-world solutions like LearnVerse to tackle UN challenges like quality education.
+          whether it is leading frontend development for SFU Hub or building real-world solutions like LearnVerse to tackle UN challenges like quality education.
           
-          As the Director of Marketing for DSSS, I help promote events and boost engagement. Outside of tech, I’m into astronomy, reading, 
+          As the Director of Marketing for DSSS, I help promote events and boost engagement. Outside of tech, I am into astronomy, reading, 
           gaming, and watching movies. 
           My all time favourite game is Tomb Raider!
         </motion.p>
