@@ -44,7 +44,7 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-sm text-gray-400 my-5 max-w-[600px] font-sans"
         >
-          I'm third-year Computing Science student at Simon Fraser University (SFU) with a passion for AI, 
+          I&apos;am third-year Computing Science student at Simon Fraser University (SFU) with a passion for AI, 
           full-stack development, machine learning, and cybersecurity. I love taking initiative and efficiently bringing ideas to life, 
           whether it is leading frontend development for SFU Hub or building real-world solutions like LearnVerse to tackle UN challenges like quality education.
           
