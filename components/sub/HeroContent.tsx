@@ -30,19 +30,19 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-6 text-6xl font-bold text-gray-400 max-w-[600px] w-auto h-auto audiowide-regular"
         >
             <span>
               Hello!
             </span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-800 to-purple-950">
               I'm Jasleen Kaur
             </span>
         </motion.div>
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-sm text-gray-400 my-5 max-w-[600px]"
+          className="text-sm text-gray-400 my-5 max-w-[600px] font-sans"
         >
           I'm third-year Computing Science student at Simon Fraser University (SFU) with a passion for AI, 
           full-stack development, machine learning, and cybersecurity. I love taking initiative and efficiently bringing ideas to life, 
@@ -50,6 +50,7 @@ const HeroContent = () => {
           
           As the Director of Marketing for DSSS, I help promote events and boost engagement. Outside of tech, I’m into astronomy, reading, 
           gaming, and watching movies. 
+          My all time favourite game is Tomb Raider!
         </motion.p>
         {/* <motion.a
           variants={slideInFromLeft(1)}
@@ -61,15 +62,17 @@ const HeroContent = () => {
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
+        className="w-full h-full flex justify-center items-center -mr-[600px]"
       >
         <Image
-          src="/mainIconsdark.svg"
+          src="/lara.png"
           alt="work icons"
-          height={650}
-          width={650}
+          height={999}
+          width={999}
+          style={{ transform: 'scale(1.3)' }}  // Makes it 30% bigger
         />
       </motion.div>
+      
     </motion.div>
   );
 };

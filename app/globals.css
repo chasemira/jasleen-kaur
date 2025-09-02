@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+/* Apply Audiowide to all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .cursive {
   font-family: "Cedarville Cursive", cursive;
@@ -70,4 +82,70 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.footer-background {
+  position: relative;
+}
+
+.footer-background::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Set a fixed height to see if it appears */
+  background-image: url('/moon-before.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center top;
+  bottom: 100%;
+  z-index: 1;
+}
+
+.footer-background::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 250px; /* Set a fixed height to see if it appears */
+  background-image: url('/moon-after.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center top;
+  z-index: 0;
+}
+
+.footer-menu-btn {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 133%;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  text-shadow: 0 0 20px #fff;
+  -webkit-transition: text-shadow 0.15s linear;
+  -moz-transition: text-shadow 0.15s linear;
+  -ms-transition: text-shadow 0.15s linear;
+  -o-transition: text-shadow 0.15s linear;
+  transition: text-shadow 0.15s linear;
+  position: relative;
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+.footer-menu-btn:link,
+.footer-menu-btn:hover,
+.footer-menu-btn:visited {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-menu-btn:hover {
+  text-shadow: 0 0 10px #00deff, 0 0 20px #00deff, 0 0 30px #00deff, 0 0 40px #00deff;
 }

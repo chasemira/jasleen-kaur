@@ -18,12 +18,12 @@ const Navbar = () => {
             className="cursor-pointer hover:animate-slowspin"
           />
 
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
+          <span className="font-bold ml-[10px] hidden md:block text-gray-300 audiowide-regular">
             Mira
           </span>
         </a>
 
-        <div className="w-[500px] h-full flex flex-row items-center ">
+        <div className="w-[500px] h-full flex flex-row items-center audiowide-regular">
           <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
             <a href="#about-me" className="cursor-pointer">
               About me
